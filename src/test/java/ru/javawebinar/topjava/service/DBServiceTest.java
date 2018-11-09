@@ -58,6 +58,8 @@ public abstract class DBServiceTest {
                 "\n---------------------------------" +
                 results +
                 "\n---------------------------------");
+
+        results.setLength(0);
     }
 
 
