@@ -20,6 +20,8 @@ public class RootController {
         return "redirect:meals";
     }
 
+    //    @Secured("ROLE_ADMIN")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/users")
     public String users() {
         return "users";
